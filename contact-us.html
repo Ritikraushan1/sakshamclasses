@@ -24,6 +24,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <div class="page-loader">
       <div class="page-loader-body">
@@ -160,11 +161,11 @@
       >
         <div class="parallax-content section-30 section-sm-70">
           <div class="shell">
-            <h2 class="veil reveal-sm-block">Rahul Pandey Profile</h2>
+            <h2 class="veil reveal-sm-block">CONTACT US</h2>
             <div class="offset-sm-top-35">
               <ul class="list-inline list-inline-lg list-inline-dashed p">
                 <li><a href="index.html">Home</a></li>
-                <li>Rahul Pandey</li>
+                <li>Contact Us</li>
               </ul>
             </div>
           </div>
@@ -174,181 +175,245 @@
         class="section novi-background bg-cover section-70 section-md-114 bg-default"
       >
         <div class="shell">
-          <div class="range range-30 range-xs-center">
-            <div class="cell-sm-4 text-sm-left">
-              <div class="inset-sm-right-30">
-                <img
-                  class="img-responsive reveal-inline-block"
-                  src="images/users/rahulpandey.png"
-                  width="340"
-                  height="340"
-                  alt=""
-                />
-                <div class="offset-top-15 offset-sm-top-30">
-                  <a
-                    class="btn btn-primary btn-block"
-                    href="contact-us.html"
-                    style="
-                      max-width: 340px;
-                      margin-left: auto;
-                      margin-right: auto;
-                    "
-                    >Get in Touch</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cell-sm-8 text-left">
-              <div>
-                <h3 class="text-bold">Rahul Pandey</h3>
-              </div>
-              <p class="offset-top-10">Chemistry Lecturer</p>
-              <div class="offset-top-15 offset-sm-top-30">
-                <hr class="divider bg-madison hr-left-0" />
-              </div>
-              <div class="offset-top-30 offset-sm-top-30">
-                <h6 class="text-bold">About Rahul</h6>
-                <div class="text-subline"></div>
-              </div>
-              <div class="offset-top-20">
+          <div class="range range-65 range-xs-center">
+            <div class="cell-md-8 text-md-left">
+              <h2 class="text-bold">Get in Touch</h2>
+              <hr class="divider bg-madison hr-md-left-0" />
+              <div class="offset-top-30 offset-md-top-30">
                 <p>
-                   Rahul Pandey joined Saksham Coaching Classes with aim to
-                  provide the best possible knowledge to the students of
-                  Saksham. He had a 8+ years of experience in this subject. He
-                  is well known for his educational content prepared for
-                  students.
+                  You can contact us any way that is convenient for you. We are
+                  available via phone or email. You can also use a quick contact
+                  form below or visit us personally. We would be happy to answer
+                  your questions.
                 </p>
               </div>
-              <div class="offset-top-30 offset-sm-top-30">
-                <h6 class="text-bold">Certificates and Awards</h6>
-                <div class="text-subline"></div>
-                <div class="offset-top-20">
-                  <ul>
-                    <li>RS-CIT Certificate with 86%</li>
-                    <li>Doctorate of Naturopathy and Yoga Science</li>
+              <div class="offset-top-30">
+                <form
+                  class="rd-mailform text-left"
+                  data-form-output="form-output-global"
+                  data-form-type="contact"
+                  method="post"
+                  action="bat/rd-mailform.php"
+                >
+                  <div class="range range-12">
+                    <div class="cell-sm-6">
+                      <div class="form-group">
+                        <label
+                          class="form-label form-label-outside"
+                          for="contact-me-name"
+                          >First name</label
+                        ><input
+                          class="form-control form-validation-inside"
+                          id="contact-me-name"
+                          type="text"
+                          name="name"
+                          data-constraints="@Required"
+                        />
+                      </div>
+                    </div>
+                    <div class="cell-sm-6">
+                      <div class="form-group">
+                        <label
+                          class="form-label form-label-outside"
+                          for="contact-me-last-name"
+                          >Last name</label
+                        ><input
+                          class="form-control form-validation-inside"
+                          id="contact-me-last-name"
+                          type="text"
+                          name="last-name"
+                          data-constraints="@Required"
+                        />
+                      </div>
+                    </div>
+                    <div class="cell-sm-6">
+                      <div class="form-group">
+                        <label
+                          class="form-label form-label-outside"
+                          for="contact-me-email"
+                          >E-mail</label
+                        ><input
+                          class="form-control form-validation-inside"
+                          id="contact-me-email"
+                          type="email"
+                          name="email"
+                          data-constraints="@Required @Email"
+                        />
+                      </div>
+                    </div>
+                    <div class="cell-sm-6">
+                      <div class="form-group">
+                        <label
+                          class="form-label form-label-outside"
+                          for="contact-me-phone"
+                          >Phone</label
+                        ><input
+                          class="form-control form-validation-inside"
+                          id="contact-me-phone"
+                          type="text"
+                          name="phone"
+                          data-constraints="@Required @IsNumeric"
+                        />
+                      </div>
+                    </div>
+                    <div class="cell-xs-12">
+                      <div class="form-group">
+                        <label
+                          class="form-label form-label-outside"
+                          for="contact-me-message"
+                          >Message</label
+                        ><textarea
+                          class="form-control form-validation-inside"
+                          id="contact-me-message"
+                          name="message"
+                          data-constraints="@Required"
+                          style="height: 220px"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center text-md-left offset-top-20">
+                    <button class="btn btn-primary" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="cell-xs-10 cell-md-4 text-left">
+              <aside class="aside inset-md-left-30">
+                <div class="aside-item-2">
+                  <h6 class="text-bold">Phones</h6>
+                  <div>
+                    <div class="hr bg-gray-light offset-top-10"></div>
+                  </div>
+                  <div class="offset-top-15">
+                    <ul class="list list-unstyled">
+                      <li>
+                        <span
+                          class="icon novi-icon icon-xs text-madison text-middle"
+                        ><i class="fa-solid fa-phone"></i
+                            ></span
+                        ><a
+                          class="text-middle inset-left-10 text-dark"
+                          href="tel:7073886136"
+                          >+91-7073886136,</a
+                        ><a
+                          class="text-middle inset-left-10 text-dark"
+                          href="tel:9694109720"
+                          >+91-9694109720,</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="aside-item-2">
+                  <h6 class="text-bold">E-mail</h6>
+                  <div>
+                    <div class="hr bg-gray-light offset-top-10"></div>
+                  </div>
+                  <div class="offset-top-15">
+                    <ul class="list list-unstyled">
+                      <li>
+                        <span
+                          class="icon novi-icon icon-xs text-madison text-middle"
+                        ><i class="fa-solid fa-envelope"></i
+                            ></span
+                        ><a
+                          class="text-primary text-middle inset-left-10 text-dark"
+                          href="mailto:sakshamcoaching2023@gmail.com"
+                          >sakshamcoaching2023@gmail.com</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="aside-item-2">
+                  <h6 class="text-bold">Address</h6>
+                  <div>
+                    <div class="hr bg-gray-light offset-top-10"></div>
+                  </div>
+                  <div class="offset-top-15">
+                    <div class="unit unit-horizontal unit-spacing-xs">
+                      <div class="unit-left">
+                        <span
+                          class="icon novi-icon icon-xs text-madison"
+                        ><i class="fa-solid fa-location-dot"></i
+                              ></span>
+                      </div>
+                      <div class="unit-body">
+                        <p class="text-dark">
+                            Behind SBI ATM, Hanuman Higher Primary School,
+                            Bidasar, Rajasthan</p
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-item-2">
+                  <h6 class="text-bold">Opening Hours</h6>
+                  <div>
+                    <div class="hr bg-gray-light offset-top-10"></div>
+                  </div>
+                  <div class="offset-top-15">
+                    <div class="unit unit-horizontal unit-spacing-xs">
+                      <div class="unit-left">
+                        <span
+                          class="icon novi-icon icon-xs text-madison"
+                        ><i class="fa-solid fa-clock"></i></span>
+                      </div>
+                      <div class="unit-body">
+                        <div>
+                          <p>Mon-Fri: 8:00am-8:00pm</p>
+                        </div>
+                        <div>
+                          <p>Sat: 8:00am-3:00pm</p>
+                        </div>
+                        <div>
+                          <p>Sun: Closed</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-item-2">
+                  <h6 class="text-bold">Socials</h6>
+                  <div class="hr bg-gray-light offset-top-10"></div>
+                  <ul class="list-inline list-inline-xs list-inline-madison">
+                    <li>
+                        <a
+                          class="icon novi-icon icon-xxs fa-facebook icon-circle icon-gray-light-filled"
+                          href="https://www.facebook.com/profile.php?id=100095132109193&mibextid=LQQJ4d"
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          class="icon novi-icon icon-xxs fa-whatsapp icon-circle icon-gray-light-filled"
+                          href="https://chat.whatsapp.com/LUEWUM6MuIYBYbX1mN80qC"
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          class="icon novi-icon icon-xxs fa-youtube icon-circle icon-gray-light-filled"
+                          href="https://youtube.com/@SakshamCoaching-ry3ol?si=L1QMazaeyYgu9zjA"
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          class="icon novi-icon icon-xxs fa-instagram icon-circle icon-gray-light-filled"
+                          href="https://instagram.com/sakshamcoaching.2023?igshid=MzRlODBiNWFlZA=="
+                        ></a>
+                      </li>
                   </ul>
                 </div>
-              </div>
-              <div class="offset-top-20 offset-sm-top-20">
-                <ul class="list list-unstyled">
-                  <li>
-                    <span
-                      class="icon novi-icon icon-xs text-middle text-madison"
-                    ><i class="fa-solid fa-phone"></i
-                            ></span
-                    ><a
-                      class="reveal-inline-block text-dark inset-left-10"
-                      href="tel:+919982107187"
-                      >+919982107187</a
-                    >
-                  </li>
-                  <li>
-                    <span
-                      class="icon novi-icon icon-xs text-middle text-madison"
-                    ><i class="fa-solid fa-envelope"></i
-                            ></span
-                    ><a
-                      class="reveal-inline-block inset-left-10 text-dark"
-                      href="parasharrahul138@gmail.com
-                                    "
-                      >parasharrahul138@gmail.com
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="offset-top-15 offset-sm-top-30">
-                <ul class="list-inline list-inline-xs list-inline-madison">
-                  <li>
-                    <a
-                      class="icon novi-icon icon-xxs fa-facebook icon-circle icon-gray-light-filled"
-                      href="#"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      class="icon novi-icon icon-xxs fa-twitter icon-circle icon-gray-light-filled"
-                      href="#"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      class="icon novi-icon icon-xxs fa-google icon-circle icon-gray-light-filled"
-                      href="#"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      class="icon novi-icon icon-xxs fa-instagram icon-circle icon-gray-light-filled"
-                      href="#"
-                    ></a>
-                  </li>
-                </ul>
-              </div>
+              </aside>
             </div>
           </div>
         </div>
       </section>
-      <section
-        class="section novi-background bg-cover section-70 section-md-114 bg-madison context-dark"
-      >
-        <div class="shell">
-          <h2 class="text-bold">Skills</h2>
-          <hr class="divider bg-madison" />
-          <div class="range range-xs-center offset-top-65">
-            <div class="cell-xs-10 cell-sm-6">
-              <div class="progress-linear-wrap">
-                <div class="progress-linear" data-to="70">
-                  <div class="progress-header clearfix">
-                    <div class="text-left">
-                      <h6 class="text-bold pull-left text-black">
-                        <span data-novi-id="8">Curriculum Planning</span>
-                      </h6>
-                    </div>
-                    <span class="text-bold pull-right progress-value">90</span>
-                  </div>
-                  <div class="progress-bar-linear-wrap offset-top-5">
-                    <div class="progress-bar-linear bg-primary"></div>
-                  </div>
-                </div>
-                <div class="progress-linear" data-to="82">
-                  <div class="progress-header clearfix">
-                    <div class="text-left">
-                      <h6 class="text-bold pull-left text-black">Online Teaching</h6>
-                    </div>
-                    <span class="text-bold pull-right progress-value">82</span>
-                  </div>
-                  <div class="progress-bar-linear-wrap offset-top-5">
-                    <div class="progress-bar-linear bg-primary"></div>
-                  </div>
-                </div>
-                <div class="progress-linear" data-to="88">
-                  <div class="progress-header clearfix">
-                    <div class="text-left">
-                      <h6 class="text-bold pull-left text-black">
-                        Effective Communication
-                      </h6>
-                    </div>
-                    <span class="text-bold pull-right progress-value">88</span>
-                  </div>
-                  <div class="progress-bar-linear-wrap offset-top-5">
-                    <div class="progress-bar-linear bg-primary"></div>
-                  </div>
-                </div>
-                <div class="progress-linear" data-to="94">
-                  <div class="progress-header clearfix">
-                    <div class="text-left">
-                      <h6 class="text-bold pull-left text-black">Offline Teaching</h6>
-                    </div>
-                    <span class="text-bold pull-right progress-value">94</span>
-                  </div>
-                  <div class="progress-bar-linear-wrap offset-top-5">
-                    <div class="progress-bar-linear bg-primary"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section class="section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3528.2876432080334!2d74.31523!3d27.83169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDQ5JzU0LjEiTiA3NMKwMTgnNTQuOCJF!5e0!3m2!1sen!2sin!4v1694850786892!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
       <footer class="section page-footer">
         <div class="novi-background bg-cover bg-default">
@@ -520,6 +585,7 @@
         </div>
       </footer>
     </div>
+    <div class="snackbars" id="form-output-global"></div>
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
